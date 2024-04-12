@@ -1,28 +1,28 @@
 //import Vue from "vue";
-import { createWebHistory, createRouter } from "vue-router";
-import Home from "@/views/Home";
-import About from "./views/About";
-import Error from "./views/Error";
+import { createWebHistory, createRouter } from 'vue-router'
+import Home from '@/views/Home'
+import About from './views/About'
+import Error from './views/Error'
 
 //Vue.use(Router);
-const history = createWebHistory();
+const history = createWebHistory()
 export default createRouter({
   history,
   routes: [
     {
-      path: "/",
-      name: "home",
+      path: '/',
+      name: 'home',
       component: Home,
     },
     {
-      path: "/about",
-      name: "about",
+      path: '/about',
+      name: 'about',
       component: About,
     },
     {
-      path: "/:catchAll(.*)",
-      name: "Error",
+      path: '/:catchAll(.*)',
+      name: 'Error',
       component: Error,
     },
   ],
-});
+})

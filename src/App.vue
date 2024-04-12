@@ -8,15 +8,15 @@
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue"; // importamos el componente HelloWorld del template
-import PxHeader from "@/components/PxHeader";
+import PxHeader from '@/components/PxHeader'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     //HelloWorld, // lo declaramos en components y asi podemos usarlo como en el template
     PxHeader,
   },
-};
+}
 </script>
 
 <style>
