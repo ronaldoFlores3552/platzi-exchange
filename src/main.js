@@ -1,4 +1,4 @@
-//import Vue from "vue";
+//import Vue from 'vue'
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@/assets/css/tailwind.css' //el @ se refiere a la raiz
@@ -6,6 +6,7 @@ import '@/assets/css/tailwind.css' //el @ se refiere a la raiz
 //apra obtener algunos tips de producción
 import router from '@/router'
 
+//Vue.filter('dollar', dollarFilter)
 //Vue.config.productionTip = false;
 
 //instanciamos Vue
