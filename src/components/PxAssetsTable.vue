@@ -41,7 +41,7 @@
               : 'text-green-600'
           "
         >
-          {{ percentFilter(a.changePercent24Hr) }}
+          {{ parcentFilter(a.changePercent24Hr) }}
         </td>
         <td class="hidden sm:block"></td>
       </tr>
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { dollarFilter, percentFilter } from '@/filters'
+import { dollarFilter, parcentFilter } from '@/filters'
 
 export default {
   name: 'PxAssetsTable',
@@ -66,7 +66,7 @@ export default {
   setup() {
     return {
       dollarFilter,
-      percentFilter,
+      parcentFilter,
     }
   },
 }

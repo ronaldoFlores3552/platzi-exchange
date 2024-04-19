@@ -7,10 +7,10 @@ const dollarFilter = function (value) {
   return numeral(value).format('($ 0.00a)')
 }
 
-const percentFilter = function (value) {
+const parcentFilter = function (value) {
   if (!value) {
     return '0%'
   }
   return `${Number(value).toFixed(2)}%`
 }
-export { dollarFilter, percentFilter }
+export { dollarFilter, parcentFilter }
