@@ -8,11 +8,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "chart.js": "^2.9.4",
+    "chartkick": "^5.0.1",
     "core-js": "^3.8.3",
     "numeral": "^2.0.6",
     "tailwindcss": "^1.1.2",
     "vue": "^3.4.21",
-    "vue-router": "^4.0.13"
+    "vue-chartkick": "^1.1.0",
+    "vue-echarts": "^6.6.9",
+    "vue-router": "^4.0.13",
+    "vue-spinner": "^1.0.4",
+    "vue-spinners": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
