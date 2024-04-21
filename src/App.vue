@@ -1,6 +1,6 @@
 <template>
   <main>
-    <px-header></px-header>
+    <px-header :links="links"></px-header>
     <!--este router será lo que se reemplazará al momento de acceder a las rutas-->
     <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
   </main>
@@ -15,6 +15,21 @@ export default {
   components: {
     //HelloWorld, // lo declaramos en components y asi podemos usarlo como en el template
     PxHeader,
+  },
+  data() {
+    return {
+      links: [
+        {
+          title: 'BTC',
+          to: { name: 'coin-detail', params: { id: 'bitcoin' } },
+        },
+        {
+          title: 'ETH',
+          to: { name: 'coin-detail', params: { id: 'ethereum' } },
+        },
+        { title: 'XRP', to: { name: 'coin-detail', params: { id: 'xrp' } } },
+      ],
+    }
   },
 }
 </script>
